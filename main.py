@@ -40,6 +40,8 @@ def process_uv_ticket(uv_ticket):
 		uv_ticket['ticket_number']
 	)
 	for message in uv_ticket['messages'][::-1]:
+		if message['is_admin_response']:
+			ticket['status'] = 4
 		description += (
 			"<br/>---<br/>"
 			"<b>%s &lt;%s&gt;</b><br/>"
