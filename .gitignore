@@ -1,0 +1,6 @@
+*.pyc
+env
+config.py
+uservoice_export.json
+__pycache__
+.DS_Store
